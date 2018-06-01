@@ -15,6 +15,9 @@
 		363306B320C0403A00F2729E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 363306B220C0403A00F2729E /* main.m */; };
 		363306BD20C0403A00F2729E /* SKProgressViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 363306BC20C0403A00F2729E /* SKProgressViewTests.m */; };
 		363306C820C0403A00F2729E /* SKProgressViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 363306C720C0403A00F2729E /* SKProgressViewUITests.m */; };
+		36D3DE2020C1399A00BECC8E /* SKProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 36D3DE1F20C1399A00BECC8E /* SKProgressView.m */; };
+		36D3DE2320C143E200BECC8E /* SKProgressFullCircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 36D3DE2220C143E200BECC8E /* SKProgressFullCircleView.m */; };
+		36D3DE2620C14FB100BECC8E /* NSTimer+sk_blockSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 36D3DE2420C14FB100BECC8E /* NSTimer+sk_blockSupport.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,12 @@
 		363306C320C0403A00F2729E /* SKProgressViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SKProgressViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		363306C720C0403A00F2729E /* SKProgressViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SKProgressViewUITests.m; sourceTree = "<group>"; };
 		363306C920C0403A00F2729E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		36D3DE1E20C1399A00BECC8E /* SKProgressView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SKProgressView.h; sourceTree = "<group>"; };
+		36D3DE1F20C1399A00BECC8E /* SKProgressView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SKProgressView.m; sourceTree = "<group>"; };
+		36D3DE2120C143E200BECC8E /* SKProgressFullCircleView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SKProgressFullCircleView.h; sourceTree = "<group>"; };
+		36D3DE2220C143E200BECC8E /* SKProgressFullCircleView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SKProgressFullCircleView.m; sourceTree = "<group>"; };
+		36D3DE2420C14FB100BECC8E /* NSTimer+sk_blockSupport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+sk_blockSupport.m"; sourceTree = "<group>"; };
+		36D3DE2520C14FB100BECC8E /* NSTimer+sk_blockSupport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTimer+sk_blockSupport.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +114,7 @@
 				363306A420C0403A00F2729E /* AppDelegate.m */,
 				363306A620C0403A00F2729E /* ViewController.h */,
 				363306A720C0403A00F2729E /* ViewController.m */,
+				36D3DE1D20C1387700BECC8E /* SKProgressView */,
 				363306A920C0403A00F2729E /* Main.storyboard */,
 				363306AC20C0403A00F2729E /* Assets.xcassets */,
 				363306AE20C0403A00F2729E /* LaunchScreen.storyboard */,
@@ -130,6 +140,19 @@
 				363306C920C0403A00F2729E /* Info.plist */,
 			);
 			path = SKProgressViewUITests;
+			sourceTree = "<group>";
+		};
+		36D3DE1D20C1387700BECC8E /* SKProgressView */ = {
+			isa = PBXGroup;
+			children = (
+				36D3DE2520C14FB100BECC8E /* NSTimer+sk_blockSupport.h */,
+				36D3DE2420C14FB100BECC8E /* NSTimer+sk_blockSupport.m */,
+				36D3DE1E20C1399A00BECC8E /* SKProgressView.h */,
+				36D3DE1F20C1399A00BECC8E /* SKProgressView.m */,
+				36D3DE2120C143E200BECC8E /* SKProgressFullCircleView.h */,
+				36D3DE2220C143E200BECC8E /* SKProgressFullCircleView.m */,
+			);
+			path = SKProgressView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -266,7 +289,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				363306A820C0403A00F2729E /* ViewController.m in Sources */,
+				36D3DE2020C1399A00BECC8E /* SKProgressView.m in Sources */,
 				363306B320C0403A00F2729E /* main.m in Sources */,
+				36D3DE2320C143E200BECC8E /* SKProgressFullCircleView.m in Sources */,
+				36D3DE2620C14FB100BECC8E /* NSTimer+sk_blockSupport.m in Sources */,
 				363306A520C0403A00F2729E /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -433,6 +459,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3G625MBJ43;
 				INFOPLIST_FILE = SKProgressView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sakya.SKProgressView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -447,6 +474,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3G625MBJ43;
 				INFOPLIST_FILE = SKProgressView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sakya.SKProgressView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
